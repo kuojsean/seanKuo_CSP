@@ -12,6 +12,13 @@
 		28588CA11FA2209100C5A854 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28588C9F1FA2209100C5A854 /* Main.storyboard */; };
 		28588CA31FA2209100C5A854 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28588CA21FA2209100C5A854 /* Assets.xcassets */; };
 		28588CA61FA2209100C5A854 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28588CA41FA2209100C5A854 /* LaunchScreen.storyboard */; };
+		28588CB31FA2236700C5A854 /* CreativityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28588CB21FA2236700C5A854 /* CreativityController.swift */; };
+		28588CB51FA2237D00C5A854 /* ProgrammingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28588CB41FA2237D00C5A854 /* ProgrammingController.swift */; };
+		28588CB71FA223B700C5A854 /* AbstractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28588CB61FA223B700C5A854 /* AbstractionController.swift */; };
+		28588CB91FA223E000C5A854 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28588CB81FA223E000C5A854 /* DataController.swift */; };
+		28588CBB1FA2240500C5A854 /* AlgorithmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28588CBA1FA2240500C5A854 /* AlgorithmController.swift */; };
+		28588CBD1FA2241700C5A854 /* InternetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28588CBC1FA2241700C5A854 /* InternetController.swift */; };
+		28588CBF1FA2242C00C5A854 /* GlobalImpactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28588CBE1FA2242C00C5A854 /* GlobalImpactController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		28588CA21FA2209100C5A854 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28588CA51FA2209100C5A854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28588CA71FA2209100C5A854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28588CB21FA2236700C5A854 /* CreativityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativityController.swift; sourceTree = "<group>"; };
+		28588CB41FA2237D00C5A854 /* ProgrammingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingController.swift; sourceTree = "<group>"; };
+		28588CB61FA223B700C5A854 /* AbstractionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractionController.swift; sourceTree = "<group>"; };
+		28588CB81FA223E000C5A854 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		28588CBA1FA2240500C5A854 /* AlgorithmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmController.swift; sourceTree = "<group>"; };
+		28588CBC1FA2241700C5A854 /* InternetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetController.swift; sourceTree = "<group>"; };
+		28588CBE1FA2242C00C5A854 /* GlobalImpactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,45 @@
 		28588C9A1FA2209100C5A854 /* seanKuo_CSP */ = {
 			isa = PBXGroup;
 			children = (
-				28588C9B1FA2209100C5A854 /* AppDelegate.swift */,
-				28588C9D1FA2209100C5A854 /* ViewController.swift */,
-				28588C9F1FA2209100C5A854 /* Main.storyboard */,
-				28588CA21FA2209100C5A854 /* Assets.xcassets */,
-				28588CA41FA2209100C5A854 /* LaunchScreen.storyboard */,
-				28588CA71FA2209100C5A854 /* Info.plist */,
+				28588CB11FA2231700C5A854 /* Settings */,
+				28588CAF1FA222FE00C5A854 /* StoryBoards */,
+				28588CAD1FA222D000C5A854 /* SwiftFiles */,
 			);
 			path = seanKuo_CSP;
+			sourceTree = "<group>";
+		};
+		28588CAD1FA222D000C5A854 /* SwiftFiles */ = {
+			isa = PBXGroup;
+			children = (
+				28588C9B1FA2209100C5A854 /* AppDelegate.swift */,
+				28588C9D1FA2209100C5A854 /* ViewController.swift */,
+				28588CB21FA2236700C5A854 /* CreativityController.swift */,
+				28588CB41FA2237D00C5A854 /* ProgrammingController.swift */,
+				28588CB61FA223B700C5A854 /* AbstractionController.swift */,
+				28588CB81FA223E000C5A854 /* DataController.swift */,
+				28588CBA1FA2240500C5A854 /* AlgorithmController.swift */,
+				28588CBC1FA2241700C5A854 /* InternetController.swift */,
+				28588CBE1FA2242C00C5A854 /* GlobalImpactController.swift */,
+			);
+			path = SwiftFiles;
+			sourceTree = "<group>";
+		};
+		28588CAF1FA222FE00C5A854 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				28588C9F1FA2209100C5A854 /* Main.storyboard */,
+				28588CA41FA2209100C5A854 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		28588CB11FA2231700C5A854 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				28588CA21FA2209100C5A854 /* Assets.xcassets */,
+				28588CA71FA2209100C5A854 /* Info.plist */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +181,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28588CBF1FA2242C00C5A854 /* GlobalImpactController.swift in Sources */,
+				28588CBD1FA2241700C5A854 /* InternetController.swift in Sources */,
+				28588CBB1FA2240500C5A854 /* AlgorithmController.swift in Sources */,
+				28588CB31FA2236700C5A854 /* CreativityController.swift in Sources */,
+				28588CB91FA223E000C5A854 /* DataController.swift in Sources */,
+				28588CB51FA2237D00C5A854 /* ProgrammingController.swift in Sources */,
+				28588CB71FA223B700C5A854 /* AbstractionController.swift in Sources */,
 				28588C9E1FA2209100C5A854 /* ViewController.swift in Sources */,
 				28588C9C1FA2209100C5A854 /* AppDelegate.swift in Sources */,
 			);
