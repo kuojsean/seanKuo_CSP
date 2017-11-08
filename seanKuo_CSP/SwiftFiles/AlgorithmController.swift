@@ -29,7 +29,7 @@ class AlgorithmController: UIViewController
         let stepEight : String = "Eighth, save and undo initial commit. Create an appropriate commit and then publish the repository. (public code)"
         
         // TODO: Finish adding all steps to algorihm
-        algorithmSteps = [stepOne, stepTwo, stepThree, stepFour, stepFive, stepSix, stepSeven,stepEight]
+        algorithmSteps = [stepOne, stepTwo, stepThree, stepFour, stepFive, stepSix, stepSeven, stepEight]
         
         let attributesDictionary = [NSAttributedStringKey.font: algorithmText.font]
         let fullAttributedString = NSMutableAttributedString(string: algorithm, attributes: attributesDictionary)
@@ -38,15 +38,26 @@ class AlgorithmController: UIViewController
         {
             let bullet : String = "🍑"
             let formattedStep : String = "\n\(bullet) \(step)"
-            let aributedStringStep : NSMutableAttributedString = NSMutableAttributedString(string: formattedStep)
+            let attributedStringStep : NSMutableAttributedString = NSMutableAttributedString(string: formattedStep)
             let paragraphStyle = createParagraphStyle()
             
-            attributedStringStep.Attributes([NSAttributedStringKey.paragraphStyle : paragraphStyle], range: NSMakeRange(0, attributedStringStep.length))
+            attributedStringStep.addAttributes([NSAttributedStringKey.paragraphStyle : paragraphStyle], range: NSMakeRange(0, attributedStringStep.length))
             
             fullAttributedString.append(attributedStringStep)
         }
         
         algorithmText.attributedText = fullAttributedString
+    }
+    
+    private func createParagraphStyle() -> NSParagraphStyle
+    {
+        let paragraphStyle: NSMutableParagraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.alignment = .left
+        paragraphStyle.defaultTabInterval = 15
+        paragraphStyle.firstLineHeadIndent = 20
+        paragraphStyle.headIndent = 35
+        
+        return paragraphStyle
     }
     
     override func viewDidLoad() {
