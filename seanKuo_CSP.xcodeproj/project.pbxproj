@@ -68,6 +68,7 @@
 		28588C9A1FA2209100C5A854 /* seanKuo_CSP */ = {
 			isa = PBXGroup;
 			children = (
+				28588CA71FA2209100C5A854 /* Info.plist */,
 				28588CB11FA2231700C5A854 /* Settings */,
 				28588CAF1FA222FE00C5A854 /* StoryBoards */,
 				28588CAD1FA222D000C5A854 /* SwiftFiles */,
@@ -104,7 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				28588CA21FA2209100C5A854 /* Assets.xcassets */,
-				28588CA71FA2209100C5A854 /* Info.plist */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
