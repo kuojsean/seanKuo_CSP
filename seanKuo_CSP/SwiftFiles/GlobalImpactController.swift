@@ -17,6 +17,7 @@ class GlobalImpactController: UIViewController {
     {
         groupSketch.image = UIImage(named: "groupSketch")
         
+        
     }
     
     override func viewDidLoad() {
