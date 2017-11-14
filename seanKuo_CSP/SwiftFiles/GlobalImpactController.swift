@@ -16,7 +16,7 @@ class GlobalImpactController: UIViewController {
     private func setupGlobalImpact() -> Void
     {
         groupSketch.image = UIImage(named: "groupSketch")
-        
+        self.addressProblem.text = "This app would address the problem of water. The water problem is huge with over 783 million not having access to clean water and over 2.1 billion lacking a sanitary facility to make clean water. Because of this, there are several people affected by disease and death around the world due to this water problem."
         
     }
     
