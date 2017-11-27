@@ -38,7 +38,7 @@ public class AbstractionController: UIPageViewController, UIPageViewControllerDa
             setViewControllers([firstViewController],
                               direction: .forward,
                               animated: true,
-                              completioin: nil)
+                              completion: nil)
         }
     }
     
@@ -53,7 +53,21 @@ public class AbstractionController: UIPageViewController, UIPageViewControllerDa
         
         let previousIndex = viewControllerIndex - 1
         
+        guard previousIndex >= 0
+        else
+        {
+            return orderedAbstractionViews.last
+        }
+        
+        guard orderedAbstractionViews.count > previousIndex
+        else
+        {
+            return nil
+        }
+        
+        return orderedAbstractionViews[previousIndex]
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
