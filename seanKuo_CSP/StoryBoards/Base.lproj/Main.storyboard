@@ -216,21 +216,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--Abstraction Controller-->
-        <scene sceneID="b4Q-rz-OvN">
-            <objects>
-                <viewController id="6bH-9S-Aid" customClass="AbstractionController" customModule="seanKuo_CSP" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sf5-pT-oAJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <viewLayoutGuide key="safeArea" id="fWT-IR-erC"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xHM-x4-ZTv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1543" y="-639"/>
-        </scene>
         <!--Global Impact Controller-->
         <scene sceneID="5zz-g9-2Gc">
             <objects>

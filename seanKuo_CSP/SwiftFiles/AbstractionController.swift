@@ -22,12 +22,38 @@ public class AbstractionController: UIPageViewController, UIPageViewControllerDa
         ]
     }()
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    //Helper method to retrieve the correct ViewController
+    private func nAbstractionViewController(abstractionLevel : String) -> UIViewController
+    {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "\(abstractionLevel)ViewController")
     }
     
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        dataSource = self
+        
+        if let firstViewController = orderedAbstractionViews.first
+        {
+            setViewControllers([firstViewController],
+                              direction: .forward,
+                              animated: true,
+                              completioin: nil)
+        }
+    }
+    
+    //MARK:- Required Protocol methods for UIPageiewControllerDatasource
+    public func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController?
+    {
+        guard let viewControllerIndex = orderedAbstractionViews.index(of: viewController)
+        else
+        {
+            return nil
+        }
+        
+        let previousIndex = viewControllerIndex - 1
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
