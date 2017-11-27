@@ -8,7 +8,20 @@
 
 import UIKit
 
-class AbstractionController: UIViewController {
+public class AbstractionController: UIPageViewController, UIPageViewControllerDataSource
+{
+    //MARK: Array of subviews
+    private (set) lazy var orderedAbstractionViews : [UIViewController] =
+    {
+        return [
+            self.newAbstractionViewController(abstractionLevel: "Block")
+            self.newAbstractionViewController(abstractionLevel: "Java")
+            self.newAbstractionViewController(abstractionLevel: "ByteCode")
+            self.newAbstractionViewController(abstractionLevel: "Binary")
+            self.newAbstractionViewController(abstractionLevel: "AndGate")
+        ]
+    }()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
