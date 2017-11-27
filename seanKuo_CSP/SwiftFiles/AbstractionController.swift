@@ -14,21 +14,21 @@ public class AbstractionController: UIPageViewController, UIPageViewControllerDa
     private (set) lazy var orderedAbstractionViews : [UIViewController] =
     {
         return [
-            self.newAbstractionViewController(abstractionLevel: "Block")
-            self.newAbstractionViewController(abstractionLevel: "Java")
-            self.newAbstractionViewController(abstractionLevel: "ByteCode")
-            self.newAbstractionViewController(abstractionLevel: "Binary")
+            self.newAbstractionViewController(abstractionLevel: "Block"),
+            self.newAbstractionViewController(abstractionLevel: "Java"),
+            self.newAbstractionViewController(abstractionLevel: "ByteCode"),
+            self.newAbstractionViewController(abstractionLevel: "Binary"),
             self.newAbstractionViewController(abstractionLevel: "AndGate")
         ]
     }()
     
     //Helper method to retrieve the correct ViewController
-    private func nAbstractionViewController(abstractionLevel : String) -> UIViewController
+    private func newAbstractionViewController(abstractionLevel : String) -> UIViewController
     {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "\(abstractionLevel)ViewController")
     }
     
-    override func viewDidLoad()
+    override public func viewDidLoad()
     {
         super.viewDidLoad()
         dataSource = self
