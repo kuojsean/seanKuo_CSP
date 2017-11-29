@@ -60,18 +60,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="58k-xM-cyc">
-                                <rect key="frame" x="16" y="343" width="343" height="282"/>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kcg-Fm-DSb">
+                                <rect key="frame" x="16" y="343" width="343" height="281"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431372549019" green="0.38823529411764707" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="8x9-Zz-JIF"/>
                     </view>
                     <connections>
                         <outlet property="textView" destination="kQd-gx-XN5" id="68n-mB-603"/>
-                        <outlet property="webViewer" destination="58k-xM-cyc" id="Fxn-Yy-kPh"/>
+                        <outlet property="webViewer" destination="Kcg-Fm-DSb" id="hhd-2t-Ix3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kHw-2y-PPn" userLabel="First Responder" sceneMemberID="firstResponder"/>
