@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InternetController: UIViewController
+class InternetMasterViewController: UITableViewController
 {
     private (set) lazy var internetTopics : [String] =
     {

@@ -45,25 +45,43 @@
             </objects>
             <point key="canvasLocation" x="2129" y="29"/>
         </scene>
-        <!--View Controller-->
+        <!--Internet Detail View Controller-->
         <scene sceneID="9FK-ng-efi">
             <objects>
-                <viewController id="R67-Bv-IsH" sceneMemberID="viewController">
+                <viewController id="R67-Bv-IsH" customClass="InternetDetailViewController" customModule="seanKuo_CSP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KRo-c7-zk0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQd-gx-XN5">
+                                <rect key="frame" x="0.0" y="64" width="359" height="271"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="58k-xM-cyc">
+                                <rect key="frame" x="16" y="343" width="343" height="282"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431372549019" green="0.38823529411764707" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="8x9-Zz-JIF"/>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="kQd-gx-XN5" id="68n-mB-603"/>
+                        <outlet property="webViewer" destination="58k-xM-cyc" id="Fxn-Yy-kPh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kHw-2y-PPn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2863" y="-543"/>
+            <point key="canvasLocation" x="2861.5999999999999" y="-543.77811094452773"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="G86-Xe-udM">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="W06-9K-STc" sceneMemberID="viewController">
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="W06-9K-STc" customClass="InternetMasterViewController" customModule="seanKuo_CSP" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="GuB-DD-Upd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
