@@ -81,7 +81,7 @@ class InternetMasterViewController: UITableViewController
     {
         if segue.identifier! == "showDetail"
         {
-            if let indexPath = self.tableView.indexPathforSelectedRow
+            if let indexPath = self.tableView.indexPathForSelectedRow
             {
                 let urlString = addresses[indexPath.row]
                 let pageText : String

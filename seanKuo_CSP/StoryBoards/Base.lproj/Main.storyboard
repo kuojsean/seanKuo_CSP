@@ -306,7 +306,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="zhc-2V-FcF" kind="show" id="dBA-Bi-DSv"/>
+                                    <segue destination="rAr-HP-ADW" kind="show" id="88w-MY-qpW"/>
                                 </connections>
                             </button>
                         </subviews>
