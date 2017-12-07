@@ -51,6 +51,7 @@ class CreativityController: UICollectionViewController, UICollectionViewDelegate
             })
             {
                 completed in
+                
                 if let largePhotoIndexPath = self.largePhotoIndexPath
                 {
                     self.collectionView?.scrollToItem(at: largePhotoIndexPath,
@@ -61,15 +62,35 @@ class CreativityController: UICollectionViewController, UICollectionViewDelegate
         }
     }
     
-    override func viewDidLoad() {
+    //MARK: Lifecycle methods
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    //MARK:- UICollectionView methods
+    
+    override public func numberOfSections(in collectionView: UICollectionView) -> Int
+    {
+        return 1
     }
     
+    override public func collectionView(_ collectionView: UICollectionView,
+                                        numberOfItemsInSection section: Int) -> Int
+    {
+        return artSelection.count
+    }
+    
+    override public func collectionView(_ collectionView: UICollectionView,
+                                      cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    {
+        let artCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as!
+        
+        artCell.backgroundColor = .purple
+        artCell.imageView.image = artSelection[indexPath.row]
+        artCell.imageName.text = "My Art"
+        
+        return artCell
+    }
     
 }
