@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		282329421FD9893B0016C455 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282329411FD9893B0016C455 /* DrawingView.swift */; };
 		283DE9AD1FCF006E00B4680A /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283DE9AC1FCF006E00B4680A /* InternetDetailViewController.swift */; };
 		283DE9B01FCF0B3E00B4680A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283DE9AF1FCF0B3E00B4680A /* WebKit.framework */; };
 		28588C9C1FA2209100C5A854 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28588C9B1FA2209100C5A854 /* AppDelegate.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		282329411FD9893B0016C455 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		283DE9AC1FCF006E00B4680A /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
 		283DE9AF1FCF0B3E00B4680A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		28588C981FA2209100C5A854 /* seanKuo_CSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = seanKuo_CSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		282329401FD989230016C455 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				282329411FD9893B0016C455 /* DrawingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		283DE9AE1FCF0B3E00B4680A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +92,7 @@
 		28588C9A1FA2209100C5A854 /* seanKuo_CSP */ = {
 			isa = PBXGroup;
 			children = (
+				282329401FD989230016C455 /* View */,
 				28588CA71FA2209100C5A854 /* Info.plist */,
 				28588CB11FA2231700C5A854 /* Settings */,
 				28588CAF1FA222FE00C5A854 /* StoryBoards */,
@@ -205,6 +216,7 @@
 				28588CB71FA223B700C5A854 /* AbstractionController.swift in Sources */,
 				28588C9E1FA2209100C5A854 /* ViewController.swift in Sources */,
 				283DE9AD1FCF006E00B4680A /* InternetDetailViewController.swift in Sources */,
+				282329421FD9893B0016C455 /* DrawingView.swift in Sources */,
 				28588C9C1FA2209100C5A854 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
