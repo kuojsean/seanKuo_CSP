@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SpriteKit
 
 class ProgrammingViewController: UIViewController
 {
@@ -22,7 +23,7 @@ class ProgrammingViewController: UIViewController
         gameView.showsNodeCount = true
         gameView.ignoresSiblingOrder = true
         
-        gameScene.scaleMode = resizeFill
+        gameScene.scaleMode = .resizeFill
         gameView.presentScene(gameScene)
     }
 
