@@ -8,8 +8,8 @@
 
 import UIKit
 
-class DrawingView: UIView{
-    
+class DrawingView: UIView
+{
     //Only override draw() if you perform custom drawing.
     //An empty implementation adversely affects performance during animation
     override public func draw(_ rect: CGRect)
@@ -47,7 +47,7 @@ class DrawingView: UIView{
     private func drawTurtle() -> Void
     {
         let logo = UIBezierPath()
-        UIColor.white.setFill()
+        UIColor.red.setFill()
         logo.move(to: CGPoint(x: 50, y:250))
         logo.addLine(to: CGPoint(x: 100, y: 300))
         logo.addLine(to: CGPoint (x: 50, y: 350))
