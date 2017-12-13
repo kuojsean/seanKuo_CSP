@@ -1,5 +1,5 @@
 //
-//  ProgrammingController.swift
+//  DataController.swift
 //  seanKuo_CSP
 //
 //  Created by Kuo, Sean on 10/26/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProgrammingController: UIViewController {
+class DataViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
