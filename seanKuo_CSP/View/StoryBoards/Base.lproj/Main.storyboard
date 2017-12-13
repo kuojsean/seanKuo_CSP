@@ -286,6 +286,21 @@
             </objects>
             <point key="canvasLocation" x="6665" y="19"/>
         </scene>
+        <!--Programming View Controller-->
+        <scene sceneID="q4p-Wl-y7Q">
+            <objects>
+                <viewController id="aiX-Dm-lcN" customClass="ProgrammingViewController" customModule="seanKuo_CSP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iCt-dU-eyT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Rfp-99-GIn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1yV-X6-BI1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-393" y="30"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -306,7 +321,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="a6p-HO-KXO" kind="show" id="YQk-MO-UVx"/>
+                                    <segue destination="aiX-Dm-lcN" kind="show" id="kzh-58-8c4"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		282329421FD9893B0016C455 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282329411FD9893B0016C455 /* DrawingView.swift */; };
 		282329441FD99C7A0016C455 /* ArtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282329431FD99C7A0016C455 /* ArtCell.swift */; };
-		28332CF01FE1741B00DCF627 /* GameController in Resources */ = {isa = PBXBuildFile; fileRef = 28332CEF1FE1741B00DCF627 /* GameController */; };
 		28332CF21FE1748A00DCF627 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 28332CF11FE1748A00DCF627 /* Sounds */; };
 		28332CF41FE174DF00DCF627 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28332CF31FE174DF00DCF627 /* Utilities.swift */; };
 		28332CF61FE176FE00DCF627 /* StarField.sks in Resources */ = {isa = PBXBuildFile; fileRef = 28332CF51FE176FE00DCF627 /* StarField.sks */; };
 		28332CF81FE1777D00DCF627 /* Model in Resources */ = {isa = PBXBuildFile; fileRef = 28332CF71FE1777D00DCF627 /* Model */; };
+		28332CFC1FE181EA00DCF627 /* LevelCompleteScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28332CF91FE181EA00DCF627 /* LevelCompleteScene.swift */; };
+		28332CFD1FE181EA00DCF627 /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28332CFA1FE181EA00DCF627 /* StartScene.swift */; };
+		28332CFE1FE181EA00DCF627 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28332CFB1FE181EA00DCF627 /* GameScene.swift */; };
 		283DE9AD1FCF006E00B4680A /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283DE9AC1FCF006E00B4680A /* InternetDetailViewController.swift */; };
 		283DE9B01FCF0B3E00B4680A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283DE9AF1FCF0B3E00B4680A /* WebKit.framework */; };
 		28588C9C1FA2209100C5A854 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28588C9B1FA2209100C5A854 /* AppDelegate.swift */; };
@@ -33,11 +35,13 @@
 /* Begin PBXFileReference section */
 		282329411FD9893B0016C455 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		282329431FD99C7A0016C455 /* ArtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCell.swift; sourceTree = "<group>"; };
-		28332CEF1FE1741B00DCF627 /* GameController */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GameController; sourceTree = "<group>"; };
 		28332CF11FE1748A00DCF627 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 		28332CF31FE174DF00DCF627 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		28332CF51FE176FE00DCF627 /* StarField.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StarField.sks; sourceTree = "<group>"; };
 		28332CF71FE1777D00DCF627 /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
+		28332CF91FE181EA00DCF627 /* LevelCompleteScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelCompleteScene.swift; sourceTree = "<group>"; };
+		28332CFA1FE181EA00DCF627 /* StartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
+		28332CFB1FE181EA00DCF627 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		283DE9AC1FCF006E00B4680A /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
 		283DE9AF1FCF0B3E00B4680A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		28588C981FA2209100C5A854 /* seanKuo_CSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = seanKuo_CSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,7 +122,9 @@
 		28588CAD1FA222D000C5A854 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				28332CEF1FE1741B00DCF627 /* GameController */,
+				28332CFB1FE181EA00DCF627 /* GameScene.swift */,
+				28332CF91FE181EA00DCF627 /* LevelCompleteScene.swift */,
+				28332CFA1FE181EA00DCF627 /* StartScene.swift */,
 				28588C9B1FA2209100C5A854 /* AppDelegate.swift */,
 				28588C9D1FA2209100C5A854 /* ViewController.swift */,
 				28588CB21FA2236700C5A854 /* CreativityController.swift */,
@@ -214,7 +220,6 @@
 			files = (
 				28332CF61FE176FE00DCF627 /* StarField.sks in Resources */,
 				28332CF21FE1748A00DCF627 /* Sounds in Resources */,
-				28332CF01FE1741B00DCF627 /* GameController in Resources */,
 				28588CA61FA2209100C5A854 /* LaunchScreen.storyboard in Resources */,
 				28332CF81FE1777D00DCF627 /* Model in Resources */,
 				28588CA31FA2209100C5A854 /* Assets.xcassets in Resources */,
@@ -231,6 +236,8 @@
 			files = (
 				28588CBF1FA2242C00C5A854 /* GlobalImpactController.swift in Sources */,
 				28588CBD1FA2241700C5A854 /* InternetMasterViewController.swift in Sources */,
+				28332CFE1FE181EA00DCF627 /* GameScene.swift in Sources */,
+				28332CFC1FE181EA00DCF627 /* LevelCompleteScene.swift in Sources */,
 				28588CBB1FA2240500C5A854 /* AlgorithmController.swift in Sources */,
 				28588CB31FA2236700C5A854 /* CreativityController.swift in Sources */,
 				28332CF41FE174DF00DCF627 /* Utilities.swift in Sources */,
@@ -241,6 +248,7 @@
 				283DE9AD1FCF006E00B4680A /* InternetDetailViewController.swift in Sources */,
 				282329421FD9893B0016C455 /* DrawingView.swift in Sources */,
 				28588C9C1FA2209100C5A854 /* AppDelegate.swift in Sources */,
+				28332CFD1FE181EA00DCF627 /* StartScene.swift in Sources */,
 				282329441FD99C7A0016C455 /* ArtCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
