@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		281C7E441FE9687900751BFC /* DeathScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281C7E431FE9687900751BFC /* DeathScene.swift */; };
 		282329421FD9893B0016C455 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282329411FD9893B0016C455 /* DrawingView.swift */; };
 		282329441FD99C7A0016C455 /* ArtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282329431FD99C7A0016C455 /* ArtCell.swift */; };
 		28332CF41FE174DF00DCF627 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28332CF31FE174DF00DCF627 /* Utilities.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		281C7E431FE9687900751BFC /* DeathScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeathScene.swift; sourceTree = "<group>"; };
 		282329411FD9893B0016C455 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		282329431FD99C7A0016C455 /* ArtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCell.swift; sourceTree = "<group>"; };
 		28332CF31FE174DF00DCF627 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				28332CFB1FE181EA00DCF627 /* GameScene.swift */,
 				28332CF91FE181EA00DCF627 /* LevelCompleteScene.swift */,
 				28332CFA1FE181EA00DCF627 /* StartScene.swift */,
+				281C7E431FE9687900751BFC /* DeathScene.swift */,
 			);
 			path = GameController;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				282329421FD9893B0016C455 /* DrawingView.swift in Sources */,
 				28332D0F1FE1886900DCF627 /* PlayerLaser.swift in Sources */,
 				28588C9C1FA2209100C5A854 /* AppDelegate.swift in Sources */,
+				281C7E441FE9687900751BFC /* DeathScene.swift in Sources */,
 				28332CFD1FE181EA00DCF627 /* StartScene.swift in Sources */,
 				282329441FD99C7A0016C455 /* ArtCell.swift in Sources */,
 			);
