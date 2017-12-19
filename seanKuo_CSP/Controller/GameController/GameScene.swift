@@ -157,7 +157,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
         starField?.zPosition = -1000
         addChild(starField!)
         
-        backgroundColor = UIColor.magenta
+        backgroundColor = UIColor.black
         rightBounds = self.size.width - 30
         setupInvaders()
         setupPlayer()
@@ -178,7 +178,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
     
     override public func didSimulatePhysics()
     {
-        
+        player.physicsBody?.velocity = CGVector(dx: accelerationX * 600, dy: 0)
     }
 
     //MARK:- Handle Motion
