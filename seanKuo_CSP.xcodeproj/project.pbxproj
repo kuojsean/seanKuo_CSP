@@ -20,10 +20,10 @@
 		28332D061FE1884C00DCF627 /* invader sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28332D031FE1884800DCF627 /* invader sound.mp3 */; };
 		28332D071FE1884C00DCF627 /* laser sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28332D021FE1884800DCF627 /* laser sound.mp3 */; };
 		28332D081FE1884C00DCF627 /* powerup sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28332D011FE1884800DCF627 /* powerup sound.mp3 */; };
-		28332D0F1FE1886900DCF627 /* PlayerLaser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28332D0A1FE1886800DCF627 /* PlayerLaser.swift */; };
+		28332D0F1FE1886900DCF627 /* PlayerBullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28332D0A1FE1886800DCF627 /* PlayerBullet.swift */; };
 		28332D101FE1886900DCF627 /* Projectile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28332D0B1FE1886900DCF627 /* Projectile.swift */; };
 		28332D111FE1886900DCF627 /* Invader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28332D0C1FE1886900DCF627 /* Invader.swift */; };
-		28332D121FE1886900DCF627 /* InvaderLaser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28332D0D1FE1886900DCF627 /* InvaderLaser.swift */; };
+		28332D121FE1886900DCF627 /* InvaderBullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28332D0D1FE1886900DCF627 /* InvaderBullet.swift */; };
 		28332D131FE1886900DCF627 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28332D0E1FE1886900DCF627 /* Player.swift */; };
 		283DE9AD1FCF006E00B4680A /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283DE9AC1FCF006E00B4680A /* InternetDetailViewController.swift */; };
 		283DE9B01FCF0B3E00B4680A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283DE9AF1FCF0B3E00B4680A /* WebKit.framework */; };
@@ -55,10 +55,10 @@
 		28332D011FE1884800DCF627 /* powerup sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "powerup sound.mp3"; sourceTree = "<group>"; };
 		28332D021FE1884800DCF627 /* laser sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "laser sound.mp3"; sourceTree = "<group>"; };
 		28332D031FE1884800DCF627 /* invader sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "invader sound.mp3"; sourceTree = "<group>"; };
-		28332D0A1FE1886800DCF627 /* PlayerLaser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerLaser.swift; sourceTree = "<group>"; };
+		28332D0A1FE1886800DCF627 /* PlayerBullet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerBullet.swift; sourceTree = "<group>"; };
 		28332D0B1FE1886900DCF627 /* Projectile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projectile.swift; sourceTree = "<group>"; };
 		28332D0C1FE1886900DCF627 /* Invader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invader.swift; sourceTree = "<group>"; };
-		28332D0D1FE1886900DCF627 /* InvaderLaser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvaderLaser.swift; sourceTree = "<group>"; };
+		28332D0D1FE1886900DCF627 /* InvaderBullet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvaderBullet.swift; sourceTree = "<group>"; };
 		28332D0E1FE1886900DCF627 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		283DE9AC1FCF006E00B4680A /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
 		283DE9AF1FCF0B3E00B4680A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -117,9 +117,9 @@
 			isa = PBXGroup;
 			children = (
 				28332D0C1FE1886900DCF627 /* Invader.swift */,
-				28332D0D1FE1886900DCF627 /* InvaderLaser.swift */,
+				28332D0D1FE1886900DCF627 /* InvaderBullet.swift */,
 				28332D0E1FE1886900DCF627 /* Player.swift */,
-				28332D0A1FE1886800DCF627 /* PlayerLaser.swift */,
+				28332D0A1FE1886800DCF627 /* PlayerBullet.swift */,
 				28332D0B1FE1886900DCF627 /* Projectile.swift */,
 			);
 			path = Model;
@@ -302,10 +302,10 @@
 				28588CB51FA2237D00C5A854 /* ProgrammingViewController.swift in Sources */,
 				28588CB71FA223B700C5A854 /* AbstractionController.swift in Sources */,
 				28588C9E1FA2209100C5A854 /* ViewController.swift in Sources */,
-				28332D121FE1886900DCF627 /* InvaderLaser.swift in Sources */,
+				28332D121FE1886900DCF627 /* InvaderBullet.swift in Sources */,
 				283DE9AD1FCF006E00B4680A /* InternetDetailViewController.swift in Sources */,
 				282329421FD9893B0016C455 /* DrawingView.swift in Sources */,
-				28332D0F1FE1886900DCF627 /* PlayerLaser.swift in Sources */,
+				28332D0F1FE1886900DCF627 /* PlayerBullet.swift in Sources */,
 				28588C9C1FA2209100C5A854 /* AppDelegate.swift in Sources */,
 				281C7E441FE9687900751BFC /* DeathScene.swift in Sources */,
 				28332CFD1FE181EA00DCF627 /* StartScene.swift in Sources */,

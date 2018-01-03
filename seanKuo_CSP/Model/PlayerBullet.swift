@@ -1,5 +1,5 @@
 //
-//  InvaderLaser.swift
+//  PlayerLaser.swift
 //  Sample_CSP
 //
 //  Created by Cody Henrichsen on 12/7/17.
@@ -9,7 +9,7 @@
 import UIKit
 import SpriteKit
 
-public class InvaderLaser: Projectile
+class PlayerBullet: Projectile
 {
     override init(imageName: String, bulletSound:String?)
     {
@@ -17,8 +17,8 @@ public class InvaderLaser: Projectile
         self.physicsBody = SKPhysicsBody(texture: self.texture!, size: self.size)
         self.physicsBody?.isDynamic = true
         self.physicsBody?.usesPreciseCollisionDetection = true
-        self.physicsBody?.categoryBitMask = CollisionCategories.InvaderBullet
-        self.physicsBody?.contactTestBitMask = CollisionCategories.Player
+        self.physicsBody?.categoryBitMask = CollisionCategories.PlayerBullet
+        self.physicsBody?.contactTestBitMask = CollisionCategories.Invader
         self.physicsBody?.collisionBitMask = 0x0
     }
     
@@ -26,10 +26,4 @@ public class InvaderLaser: Projectile
     {
         super.init(coder: aDecoder)
     }
-    
-//    public func fireBullet(scene: SKScene) -> Void
-//    {
-//        
-//    }
-    
 }
