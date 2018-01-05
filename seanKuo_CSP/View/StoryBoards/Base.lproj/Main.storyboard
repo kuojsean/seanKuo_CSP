@@ -81,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kHw-2y-PPn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3969" y="-678"/>
+            <point key="canvasLocation" x="3969" y="-604"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="G86-Xe-udM">
@@ -92,13 +92,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="lGn-mC-ASI">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="lGn-mC-ASI">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lGn-mC-ASI" id="S8u-sP-BW3">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="R67-Bv-IsH" kind="showDetail" identifier="showDetail" id="QaQ-tY-elF"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -321,7 +324,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="aiX-Dm-lcN" kind="show" id="kzh-58-8c4"/>
+                                    <segue destination="zhc-2V-FcF" kind="show" id="nh2-gA-M9f"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -547,4 +550,7 @@
         <image name="javaPic" width="527" height="468"/>
         <image name="javaSample" width="1126" height="754"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="QaQ-tY-elF"/>
+    </inferredMetricsTieBreakers>
 </document>

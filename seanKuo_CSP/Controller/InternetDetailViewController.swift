@@ -71,7 +71,7 @@ public class InternetDetailViewController : UIViewController
             {
                 if let currentText = textView
                 {
-                    currentText.text = "Cody's CSP app internet screen"
+                    currentText.text = "Sean's CSP app internet screen"
                 }
             }
     }
