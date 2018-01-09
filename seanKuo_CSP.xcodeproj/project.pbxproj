@@ -39,6 +39,9 @@
 		28588CBB1FA2240500C5A854 /* AlgorithmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28588CBA1FA2240500C5A854 /* AlgorithmController.swift */; };
 		28588CBD1FA2241700C5A854 /* InternetMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28588CBC1FA2241700C5A854 /* InternetMasterViewController.swift */; };
 		28588CBF1FA2242C00C5A854 /* GlobalImpactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28588CBE1FA2242C00C5A854 /* GlobalImpactController.swift */; };
+		28FFE36620050C1E00D409AF /* BucketItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFE36520050C1E00D409AF /* BucketItemCell.swift */; };
+		28FFE36920050C7B00D409AF /* BucketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFE36820050C7B00D409AF /* BucketItem.swift */; };
+		28FFE36F20050D2B00D409AF /* bucket.csv in Resources */ = {isa = PBXBuildFile; fileRef = 28FFE36E20050D2B00D409AF /* bucket.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +79,9 @@
 		28588CBA1FA2240500C5A854 /* AlgorithmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmController.swift; sourceTree = "<group>"; };
 		28588CBC1FA2241700C5A854 /* InternetMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMasterViewController.swift; sourceTree = "<group>"; };
 		28588CBE1FA2242C00C5A854 /* GlobalImpactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactController.swift; sourceTree = "<group>"; };
+		28FFE36520050C1E00D409AF /* BucketItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItemCell.swift; sourceTree = "<group>"; };
+		28FFE36820050C7B00D409AF /* BucketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItem.swift; sourceTree = "<group>"; };
+		28FFE36E20050D2B00D409AF /* bucket.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bucket.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,10 +99,9 @@
 		282329401FD989230016C455 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				28FFE36B20050CB000D409AF /* CreativityView */,
 				28332CF51FE176FE00DCF627 /* StarField.sks */,
 				28588CAF1FA222FE00C5A854 /* StoryBoards */,
-				282329411FD9893B0016C455 /* DrawingView.swift */,
-				282329431FD99C7A0016C455 /* ArtCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -116,11 +121,8 @@
 		28332D141FE1887400DCF627 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				28332D0C1FE1886900DCF627 /* Invader.swift */,
-				28332D0D1FE1886900DCF627 /* InvaderBullet.swift */,
-				28332D0E1FE1886900DCF627 /* Player.swift */,
-				28332D0A1FE1886800DCF627 /* PlayerBullet.swift */,
-				28332D0B1FE1886900DCF627 /* Projectile.swift */,
+				28FFE36C20050CCE00D409AF /* StarWars */,
+				28FFE36720050C6500D409AF /* DataView */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -175,17 +177,9 @@
 		28588CAD1FA222D000C5A854 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				28FFE36A20050C8D00D409AF /* OtherControllers */,
+				28FFE36420050BD400D409AF /* DataView */,
 				28332D151FE18C9D00DCF627 /* GameController */,
-				28588C9B1FA2209100C5A854 /* AppDelegate.swift */,
-				28588C9D1FA2209100C5A854 /* ViewController.swift */,
-				28588CB21FA2236700C5A854 /* CreativityController.swift */,
-				28588CB41FA2237D00C5A854 /* ProgrammingViewController.swift */,
-				28588CB61FA223B700C5A854 /* AbstractionController.swift */,
-				28588CB81FA223E000C5A854 /* DataViewController.swift */,
-				28588CBA1FA2240500C5A854 /* AlgorithmController.swift */,
-				28588CBC1FA2241700C5A854 /* InternetMasterViewController.swift */,
-				283DE9AC1FCF006E00B4680A /* InternetDetailViewController.swift */,
-				28588CBE1FA2242C00C5A854 /* GlobalImpactController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -202,12 +196,67 @@
 		28588CB11FA2231700C5A854 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				28FFE36E20050D2B00D409AF /* bucket.csv */,
 				28332D091FE1885600DCF627 /* Sounds */,
 				28588CA71FA2209100C5A854 /* Info.plist */,
 				28332CF31FE174DF00DCF627 /* Utilities.swift */,
 				28588CA21FA2209100C5A854 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		28FFE36420050BD400D409AF /* DataView */ = {
+			isa = PBXGroup;
+			children = (
+				28588CB81FA223E000C5A854 /* DataViewController.swift */,
+				28FFE36520050C1E00D409AF /* BucketItemCell.swift */,
+			);
+			path = DataView;
+			sourceTree = "<group>";
+		};
+		28FFE36720050C6500D409AF /* DataView */ = {
+			isa = PBXGroup;
+			children = (
+				28FFE36820050C7B00D409AF /* BucketItem.swift */,
+			);
+			path = DataView;
+			sourceTree = "<group>";
+		};
+		28FFE36A20050C8D00D409AF /* OtherControllers */ = {
+			isa = PBXGroup;
+			children = (
+				28588C9B1FA2209100C5A854 /* AppDelegate.swift */,
+				28588C9D1FA2209100C5A854 /* ViewController.swift */,
+				28588CB21FA2236700C5A854 /* CreativityController.swift */,
+				28588CB41FA2237D00C5A854 /* ProgrammingViewController.swift */,
+				28588CB61FA223B700C5A854 /* AbstractionController.swift */,
+				28588CBA1FA2240500C5A854 /* AlgorithmController.swift */,
+				28588CBC1FA2241700C5A854 /* InternetMasterViewController.swift */,
+				283DE9AC1FCF006E00B4680A /* InternetDetailViewController.swift */,
+				28588CBE1FA2242C00C5A854 /* GlobalImpactController.swift */,
+			);
+			path = OtherControllers;
+			sourceTree = "<group>";
+		};
+		28FFE36B20050CB000D409AF /* CreativityView */ = {
+			isa = PBXGroup;
+			children = (
+				282329411FD9893B0016C455 /* DrawingView.swift */,
+				282329431FD99C7A0016C455 /* ArtCell.swift */,
+			);
+			path = CreativityView;
+			sourceTree = "<group>";
+		};
+		28FFE36C20050CCE00D409AF /* StarWars */ = {
+			isa = PBXGroup;
+			children = (
+				28332D0C1FE1886900DCF627 /* Invader.swift */,
+				28332D0D1FE1886900DCF627 /* InvaderBullet.swift */,
+				28332D0E1FE1886900DCF627 /* Player.swift */,
+				28332D0A1FE1886800DCF627 /* PlayerBullet.swift */,
+				28332D0B1FE1886900DCF627 /* Projectile.swift */,
+			);
+			path = StarWars;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +320,7 @@
 			files = (
 				28332CF61FE176FE00DCF627 /* StarField.sks in Resources */,
 				28332D041FE1884C00DCF627 /* boss sound.mp3 in Resources */,
+				28FFE36F20050D2B00D409AF /* bucket.csv in Resources */,
 				28332D061FE1884C00DCF627 /* invader sound.mp3 in Resources */,
 				28332D051FE1884C00DCF627 /* extra sound.mp3 in Resources */,
 				28332D071FE1884C00DCF627 /* laser sound.mp3 in Resources */,
@@ -288,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28FFE36920050C7B00D409AF /* BucketItem.swift in Sources */,
 				28588CBF1FA2242C00C5A854 /* GlobalImpactController.swift in Sources */,
 				28588CBD1FA2241700C5A854 /* InternetMasterViewController.swift in Sources */,
 				28332CFE1FE181EA00DCF627 /* GameScene.swift in Sources */,
@@ -302,6 +353,7 @@
 				28588CB51FA2237D00C5A854 /* ProgrammingViewController.swift in Sources */,
 				28588CB71FA223B700C5A854 /* AbstractionController.swift in Sources */,
 				28588C9E1FA2209100C5A854 /* ViewController.swift in Sources */,
+				28FFE36620050C1E00D409AF /* BucketItemCell.swift in Sources */,
 				28332D121FE1886900DCF627 /* InvaderBullet.swift in Sources */,
 				283DE9AD1FCF006E00B4680A /* InternetDetailViewController.swift in Sources */,
 				282329421FD9893B0016C455 /* DrawingView.swift in Sources */,
