@@ -509,7 +509,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="kMV-Iq-JRy" customClass="BucketItemCell" customModule="seanKuo_CSP" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dataIdentifier" id="kMV-Iq-JRy" customClass="BucketItemCell" customModule="seanKuo_CSP" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kMV-Iq-JRy" id="1q6-yH-koy">
@@ -552,6 +552,11 @@
                                         <constraint firstItem="yF0-9b-9ID" firstAttribute="leading" secondItem="1q6-yH-koy" secondAttribute="leading" id="yan-OO-QYe"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="bucketItemSignature" destination="Gw0-y0-4WZ" id="S3b-De-bLj"/>
+                                    <outlet property="bucketItemSymbol" destination="yF0-9b-9ID" id="BYa-vq-RYZ"/>
+                                    <outlet property="bucketItemText" destination="Kvx-q7-JjI" id="oUH-n4-qw7"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
